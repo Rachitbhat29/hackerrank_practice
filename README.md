@@ -1,2 +1,2 @@
 # hackerrank_practice
-# covers hackerrank practice questions
+covers hackerrank practice questions
