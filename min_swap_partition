@@ -1,0 +1,23 @@
+# Solution to question added in readme
+
+def min_cost(a,p):
+    pos = len(a)
+    count =0
+    for idx,i in enumerate(a[::-1]):
+        if i>p:
+            if len(a)-idx!= pos:
+                a.insert(pos,a.pop(idx))
+                count+=1
+            pos -= 1
+
+    return count
+
+p = int(input("Enter Pivot value:"))
+a_count = int(input("Enter the count of element for array:"))
+a=[]
+
+for i in range(a_count):
+    a.append(int(input("Enter element:")))
+m = min_cost(a,p)
+
+print("Minimum cost is :"+ str(m))
